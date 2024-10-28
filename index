@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Valeria Guerra's Portfolio</title>
+    </head>
+    <body style="font-family: Arial;">
+        <header id="main-header" style="background-color: black; color: #98FF98; font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: bold;">
+            My Portfolio
+        </header>
+        
+        <nav>
+            <a href="#A-bit-about-me">About Me</a><br>
+            <a href="#My-Goals">My Goals</a><br>
+            <a href="#Michi">My Dog Michi</a><br>
+        </nav>
+
+        <section id="A-bit-about-me">
+            <h1 style="background-color: #98FF98; color: black">A bit about me!</h1>
+            <p>Hi! My name is Valeria and I am studying Media Arts and Sciences. My freetime involves being at home, sleeping in with my dog, working out, or hanging out with my boyfriend or friends.</p>
+        </section>
+        
+        <section id="My-Goals">
+            <h1 style="background-color: #98FF98; color: black">My Goals!</h1>
+            <p>My goals are to be as creative as possible. I want to first begin my journey with Graphic Design and Video editing and possibly create visual effects similar to the way Japan at TeamLabs.</p>
+         </section>
+
+        <section id="Michi">
+            <h1 style="background-color: #98FF98; color: black">Michi</h1>
+            <p>My dog is a Blue Heeler. She has been my ride-or-die for 7 years, and she goes wherever I go.</p>
+        </section>
+
+        <section id="More-About">
+            <h2 style="text-decoration: underline; font-size: 16px;">A pic of Michi</h2>
+            <p><img src="Michi.jpg" alt="A picture of Michi" style="height: 500px;" /></p>
+        </section>
+    </body>
+</html>
