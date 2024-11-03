@@ -1,37 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Valeria Guerra</title>
     <style>
-
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
         body {
             background-color: #000000;
         }
 
-        .container { 
-            width: 798px; 
-        }
-
         img {
-            height: 400px; 
-            width: 400px; 
-            object-fit: cover;
-            border-radius: 50%;
-        }
-        .content {
-            width: inherit;
-            height: 738px;
-            background-color: #3ae5a8;
-            border-radius: 41px 41px 0px 0px;
-            color: #3ae5a8;
+            height: 500px;
+            width: auto;
+            border-radius: 40px;
         }
 
-        .container > nav {
+        .container {
+            position: relative;
+            width: 700px;
+            height: 800px;
             background-color: #3ae5a8;
-            color: #000000;
+            border-radius: 41px;
+            color: black;
+            margin: auto;
+        }
+
+        .content>nav {
+            background-color: #3ae5a8;
+            color: black;
+            padding-left: 10%;
         }
 
         a button {
@@ -41,66 +39,63 @@
             border-radius: 25px;
             text-align: center;
             border: none;
-            color: #FFFFFF; 
+            color: black;
             font-family: "Playfair Display", serif;
-            font-size: 20px;
-            font-style: italic;
+            font-size: 25px;
             font-weight: 400;
-            text-transform: lowercase;
             text-decoration: none;
         }
 
         a:hover button {
-            background-color: #2e1128;
-            color: #000000; 
-            font-weight: 800; 
-            letter-spacing: 4px;
-            border: 1px solid #000000;
-        }
-
-        #michi {
-            background-color: inherit; 
-            color: #000000;
+            background-color: #3ae5a8;
+            color: black;
             font-family: "Playfair Display", serif;
-            font-size: 64px;
-            font-style: italic;
+            font-size: 25px;
             font-weight: 800;
-            line-height: normal;
+            text-decoration: none;
+            letter-spacing: 2px;
         }
 
-        #sectionHeadings {
-            background-color: #000000; 
-            color: #3ae5a8;
+        #michi-picture {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        #about {
+            position: relative;
+            top: 100px;
+        }
+
+        #about::first-letter {
             font-family: "Playfair Display", serif;
-            font-size: 48px;
-            font-style: italic;
-            font-weight: 800;
-            line-height: normal;
+            font-size: 30px;
+            font-weight: 500;
+            font-style: oblique;
         }
-
-        #about { 
-            font-family: Arial, Helvetica, sans-serif;
-            color: #FFFFFF; /* Set to white for contrast */
-        }
-
     </style>
 </head>
 
 <body>
-
     <section class="container">
-        <img src="./Michi.jpg" id="Michi-picture" alt="A picture of a dog">
-        <nav id="navigation">
-            <a href="#about"><button>About</button></a>
-            <a href="#why"><button>Why</button></a>
-            <a href="#contact"><button>Contact</button></a>
-        </nav>
-        
+        <img src="Michi.jpg" id="michi-picture" alt="A picture of a dog">
+
         <section class="content">
-            <p id="sectionHeadings">About me!</p>
+            <header>
+                <h1>About me!</h1>
+            </header>
+
+            <nav id="navigation">
+                <a href="#about"><button>About</button></a>
+                <a href="#why"><button>Why</button></a>
+                <a href="#contact"><button>Contact</button></a>
+            </nav>
+
             <section id="about">
-                My name is Valeria, and Michi is my awesome dog! She loves to sleep and stick by me.
-                A few things about me: when I have time, I love to sleep in, workout, hang out with my boyfriend, and cook.
+                <h2>
+                    My name is Valeria, and Michi is my awesome dog! She loves to sleep and stick by me.
+                    A few things about me: when I have time, I love to sleep in, workout, hang out with my boyfriend, and cook.
+                </h2>
             </section>
 
             <section id="why">
@@ -111,9 +106,7 @@
                 <!-- Add content for the "Contact" section here -->
             </section>
         </section>
-
     </section>
-
 </body>
 
 </html>
