@@ -4,32 +4,41 @@
 <head>
     <title>Valeria Guerra</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
         body {
             background-color: #000000;
-        }
-
-        img {
-            height: 500px;
-            width: auto;
-            border-radius: 40px;
+            font-family: "Playfair Display", serif;
+            color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
         }
 
         .container {
-            position: relative;
             width: 700px;
-            height: 800px;
             background-color: #3ae5a8;
             border-radius: 41px;
             color: black;
             margin: auto;
+            padding: 20px;
+        }
+
+        #Michi-picture {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%; 
+            display: block;
+            margin: 20px auto;
         }
 
         .content>nav {
             background-color: #3ae5a8;
             color: black;
             padding-left: 10%;
+            margin-bottom: 20px;
         }
 
         a button {
@@ -49,29 +58,32 @@
         a:hover button {
             background-color: #3ae5a8;
             color: black;
-            font-family: "Playfair Display", serif;
-            font-size: 25px;
             font-weight: 800;
-            text-decoration: none;
             letter-spacing: 2px;
         }
 
-        #michi-picture {
-            display: block;
-            position: relative;
-            margin: 0 auto;
+        #about {
+            margin-top: 20px;
         }
 
-        #about {
-            position: relative;
-            top: 100px;
+        header h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 36px;
+            color: #2e1128;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 18px;
+            color: black;
+            text-align: justify;
         }
 
         #about::first-letter {
-            font-family: "Playfair Display", serif;
             font-size: 30px;
-            font-weight: 500;
+            font-weight: 700;
             font-style: oblique;
+            color: #2e1128;
         }
     </style>
 </head>
