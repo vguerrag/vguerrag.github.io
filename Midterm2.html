@@ -1,1 +1,97 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Beach Love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Spicy Rice, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background: #91c3e0;
+            color: #4a3f35;
+            padding: 20px;
+            text-align: left;
+            font-family: 'Spicy Rice', cursive;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        /* Contact Form Styling */
+        #contact {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(43, 103, 232, 0.4);
+            border-radius: 15px;
+            border: 2px solid #dbc5a9;
+        }
+
+        #contact h2 {
+            color: #4a3f35;
+        }
+
+        #contact input, #contact textarea {
+            margin-bottom: 10px;
+            padding: 12px;
+            border: 1px solid #c9b8a3;
+            border-radius: 10px;
+            font-size: 1em;
+            background-color: #fff9f4;
+            color: #4a3f35;
+        }
+
+        #contact button {
+            padding: 12px;
+            background: #dbc5a9;
+            color: #4a3f35;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        #contact button:hover {
+            background: #c9b8a3;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <section id="contact">
+        <h2>Send me a message</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+</html>
