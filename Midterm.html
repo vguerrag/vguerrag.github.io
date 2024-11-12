@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beach Love</title>
-    <!-- Corrected Google Fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
 
     <style>
         /* Base Styles */
-        /* Base Styles */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-image: url('sunset.jpg'); /* Background image */
+            background-image: url('sunset.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -64,23 +62,34 @@
         }
 
         /* Remove background and shadow from sections */
-        .about-me, .goals, #contact {
+        .about-me, .goals {
             flex: 1 45%;
             margin: 10px;
             padding: 20px;
-            background-color: #2b67e8; 
-            opacity: 0.6;
-            box-shadow: none; 
-            border: double; 
+            background-color: transparent;
+            box-shadow: none;
         }
 
-        .about-me p, .goals p, #contact p {
+        .about-me p, .goals p {
             font-size: 1.1em;
             margin: 15px 0;
-            color: #cbd7e6;
+            color: #f3f5f6;
         }
 
-        /* Contact Form */
+        /* Contact Section: Smaller, centered box */
+        #contact {
+            max-width: 400px; /* Smaller max width */
+            margin: 20px auto; /* Center on the page */
+            padding: 20px;
+            background-color: rgba(43, 103, 232, 0.4); /* Transparent background */
+            border-radius: 15px;
+            border: 2px solid #dbc5a9;
+        }
+
+        #contact h2, #contact p, #contact label {
+            color: #4a3f35;
+        }
+
         #contact form {
             display: flex;
             flex-direction: column;
@@ -119,7 +128,6 @@
                 margin: 10px 0;
             }
         }
-
     </style>
 </head>
 <body>
@@ -127,28 +135,26 @@
     <header>
         <h1>Beach Love</h1>
         <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#goals">Songs that remind me of the beach</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
     <section class="flex-container">
         <section class="about-me" id="about-me">
             <h2>About Me</h2>
-            <p>I love the beach, it is a place that makes me feel like I've never going to get old. It is a place that makes me feel like times stops and the only thing there is to do is to enjoy it.</p>
-            <p>When I retire I want to live in a beach, preferably in Mexico.</p>
-            <p>I've love to visit beaches from all over the world if I can. </p>
+            <p>I love the beach, it is a place that makes me feel like I've never going to get old...</p>
         </section> 
     
         <section class="goals" id="goals">
             <h2>Song that Reminds Me of the Beach</h2>
-            <p>I would love to capture all the footage I can get when visiting these beaches.</p>
-            <p>Learn about the beach and the country I'm visiting so I can also gain knowledge.</p>
-            <!-- Adding YouTube link -->
             <p>One song that reminds me of the beach is 
                 <a href="https://www.youtube.com/watch?v=ARWg160eaX4" target="_blank" rel="noopener noreferrer">
                     "Beach Song" on YouTube
                 </a>.
             </p>
         </section>
-        
     </section>
 
     <section id="contact">
