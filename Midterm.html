@@ -11,6 +11,7 @@
 
     <style>
         /* Base Styles */
+        /* Base Styles */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -62,44 +63,20 @@
             padding: 0 20px;
         }
 
+        /* Remove background and shadow from sections */
         .about-me, .goals, #contact {
             flex: 1 1 45%;
             margin: 10px;
             padding: 20px;
-            background-color: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: transparent; /* Transparent background */
+            box-shadow: none; /* No shadow */
+            border: none; /* No border */
         }
 
         .about-me p, .goals p, #contact p {
             font-size: 1.1em;
             margin: 15px 0;
             color: #4a3f35;
-        }
-
-        a {
-            color: #7b4b3a;
-            text-decoration: underline;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #a26650;
-        }
-
-        /* Image Styling */
-        figure {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-
-        figure img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-            border: 3px solid #dbc5a9;
         }
 
         /* Contact Form */
@@ -134,16 +111,6 @@
             transform: scale(1.05);
         }
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        section {
-            animation: fadeIn 1s ease;
-        }
-
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .about-me, .goals, #contact {
@@ -151,6 +118,7 @@
                 margin: 10px 0;
             }
         }
+
     </style>
 </head>
 <body>
@@ -159,7 +127,7 @@
         <h1>Beach Love</h1>
         <nav>
             <a href="#about-me">About Me</a>
-            <a href="#goals">Songs that remind me of the beach</a>
+            <a href="#goals"> A song that reminds me of the beach</a>
             <a href="#contact">Contact</a>
             <a href="midterm2.html" class="back-button">Fun Facts</a>
         </nav>
@@ -174,10 +142,17 @@
         </section> 
     
         <section class="goals" id="goals">
-            <h2>My Goals</h2>
-            <p>I would love to capture all the footage I can get when visiting these beaches. </p>
+            <h2>Songs that Remind Me of the Beach</h2>
+            <p>I would love to capture all the footage I can get when visiting these beaches.</p>
             <p>Learn about the beach and the country I'm visiting so I can also gain knowledge.</p>
+            <!-- Adding YouTube link -->
+            <p>One song that reminds me of the beach is 
+                <a href="https://www.youtube.com/watch?v=ARWg160eaX4" target="_blank" rel="noopener noreferrer">
+                    "Beach Song" on YouTube
+                </a>.
+            </p>
         </section>
+        
     </section>
 
     <section id="contact">
