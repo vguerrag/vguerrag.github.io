@@ -56,25 +56,36 @@
         .flex-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
             margin: 20px auto;
             padding: 0 20px;
+            max-width: 800px;
         }
 
         
         .about-me, .goals {
-            flex: 1 45%;
-            margin: 10px;
-            padding: 10px;
-            background-color: rgba(7, 31, 83, 0.4);
-            box-shadow: none;
+            width: 100%;  
+            margin: 10px 0;  
+            padding: 20px;
+            background-color: rgba(43, 103, 232, 0.4);
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
         }
+
+
+     .about-me h2, .goals h2 {
+            font-size: 1.8em;
+            text-align: center;
+            color: #4a3f35;
+}
 
         .about-me p, .goals p {
             font-size: 1.1em;
-            margin: 15px 0;
+            text-align: center;
             color: #f3f5f6;
-        }
+}
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
@@ -100,16 +111,17 @@
             <h2>About Me</h2>
             <p>I love the beach, it is a place that makes me feel like I've never going to get old...</p>
         </section> 
-    
+        
         <section class="goals" id="goals">
             <h2>Song that Reminds Me of the Beach</h2>
-            <p>One song that reminds me of the beach is 
+            <p>Bad Bunny - Neverita
                 <a href="https://www.youtube.com/watch?v=ARWg160eaX4" target="_blank" rel="noopener noreferrer">
                     "Beach Song" on YouTube
                 </a>.
             </p>
         </section>
     </section>
+    
 
 
 </body>
