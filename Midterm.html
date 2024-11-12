@@ -12,10 +12,10 @@
         /* Keyframe animation to fade in the background */
         @keyframes fadeInBackground {
             0% {
-                opacity: 0;
+                background-color: rgba(0, 0, 0, 0); /* Transparent background */
             }
             100% {
-                opacity: 1;
+                background-color: rgba(0, 0, 0, 1); /* Solid background */
             }
         }
 
@@ -27,7 +27,8 @@
             background-size: cover;
             background-position: center;
             animation: fadeInBackground 3s ease-in-out; /* Apply the fade-in animation */
-            opacity: 0; /* Start with opacity 0 to make the background invisible */
+            background-attachment: fixed;
+            opacity: 0; /* Start with opacity 0 */
         }
 
         /* Header */
@@ -76,7 +77,6 @@
             max-width: 800px;
         }
 
-        
         .about-me, .goals {
             width: 100%;  
             margin: 10px 0;  
