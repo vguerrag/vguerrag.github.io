@@ -9,6 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
 
     <style>
+        /* Keyframe animation to fade in the background */
+        @keyframes fadeInBackground {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
         /* Base Styles */
         body {
             margin: 0;
@@ -16,6 +26,8 @@
             background-image: url('sunset.jpg');
             background-size: cover;
             background-position: center;
+            animation: fadeInBackground 3s ease-in-out; /* Apply the fade-in animation */
+            opacity: 0; /* Start with opacity 0 to make the background invisible */
         }
 
         /* Header */
@@ -74,18 +86,17 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
         }
 
-
-     .about-me h2, .goals h2 {
+        .about-me h2, .goals h2 {
             font-size: 1.8em;
             text-align: center;
             color: #b74b30;
-}
+        }
 
         .about-me p, .goals p {
             font-size: 1.1em;
             text-align: center;
             color: #f3f5f6;
-}
+        }
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
@@ -102,7 +113,6 @@
         <h1>Beach Love</h1>
         <nav>
                 <a href="Midterm2.html">Contact</a> 
-
         </nav>
     </header>
 
@@ -121,8 +131,6 @@
             </p>
         </section>
     </section>
-    
-
 
 </body>
 </html>
