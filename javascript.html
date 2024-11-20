@@ -1,0 +1,78 @@
+// Write a variable that is a string and output to console
+let myString = "Different fruits";
+console.log(myString);
+
+// Write a variable that is a number and output to console
+let myNumber = 23;
+console.log(myNumber);
+
+// Write a variable that takes any two numbers and adds them
+let sum = 6 + 5;
+console.log(sum);
+
+// Write a variable that takes any two numbers and subtracts them and output to console
+let difference = 10 - 4;
+console.log(difference);
+
+// Write a variable that takes any two numbers and performs a modulo that has a value of 1 and output to console
+let moduloResult = 8 % 5;
+console.log(moduloResult);
+
+// Write a variable that takes any two numbers and perform an exponential value and output to console
+let exponentResult = 5 ** 2; 
+console.log(exponentResult);
+
+// Write a statement that is false using a conditional statement and output to console
+if (10 > 20) {
+    console.log("This statement is true.");
+} else {
+    console.log("This statement is false."); // This will run
+}
+
+// Output the value of "breed" from the siggy object
+let siggy = {
+    breed: "cat",
+    baby: "big baby",
+    fluffy: "fluffy",
+    output: function () {
+        return `Siggy is a ${this.breed} that is a ${this.fluffy} ${this.baby}`;
+    }
+};
+console.log(siggy.breed);
+
+// Copy + paste the siggy object below and rename the variable, then change the object values
+let michi = {
+    breed: "dog",
+    baby: "old baby",
+    fluffy: "super fluffy",
+    output: function () {
+        return `michi is a ${this.breed} that is a ${this.fluffy} ${this.baby}`;
+    }
+};
+console.log(doggy.breed);
+console.log(doggy.baby);
+console.log(doggy.fluffy);
+console.log(doggy.output());
+
+// Create an array
+let myArray = ["passionfruit", "grapes", "cherry", "orange", "lemon"];
+
+// Call the value in the 3rd position of the array and output to console
+console.log(myArray[2]); // Remember array indices start at 0
+
+// Call all values in the array using a loop
+for (let i = 0; i < myArray.length; i++) {
+    console.log(myArray[i]);
+}
+
+// What is the value of the variable ifStatement?
+let ifStatement;
+let value = 5;
+
+if (value < 5) {
+    ifStatement = true;
+} else {
+    ifStatement = false;
+}
+console.log(ifStatement); // The value is "false" because 5 is not less than 5
+
